@@ -1,0 +1,4 @@
+sizeof(bool)=1 sizeof(char)=1 sizeof(int)=4 sizeof(long long)=8 sizeof(float)=4 sizeof(double)=8
+Network collection (paise): 10800000000
+INT_MAX=2147483647; LLONG_MAX=9223372036854775807
+Adding Rs 0.10 three million times as double: 300000.00000195683 (expected 300000.0)

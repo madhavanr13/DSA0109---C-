@@ -1,0 +1,4 @@
+Airport weekday off-peak: 6000 paise
+Airport weekday peak: 7200 paise
+Airport weekend peak-hour (weekend discount only): 5400 paise
+Pass covers Inner: 1; Middle: 0; Airport: 1

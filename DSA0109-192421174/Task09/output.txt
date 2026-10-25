@@ -1,0 +1,7 @@
+Inner off-peak: expected=1000 actual=1000 PASS
+Middle morning peak: expected=2400 actual=2400 PASS
+Outer 10:00 boundary: expected=3000 actual=3000 PASS
+Outer 17:00 boundary: expected=3600 actual=3600 PASS
+Outer 20:00 boundary: expected=3000 actual=3000 PASS
+Student concession: expected=1000 actual=1000 PASS
+6/6 tests passed

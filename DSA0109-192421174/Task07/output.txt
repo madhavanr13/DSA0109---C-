@@ -1,0 +1,3 @@
+Procedural accepted: 1, balance=7000
+OOP accepted: 1, balance=7000
+Oversized fare rejected: 1, balance=7000

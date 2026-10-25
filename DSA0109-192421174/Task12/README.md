@@ -1,0 +1,5 @@
+## Design challenge
+Impact: Zone gains Airport and Count; fare table grows with Airport=6000 paise; switch cases or index table change; fare policy separates weekday peak surcharge from weekend discount; MonthlyPass stores two covered zones. Retain SmartCard's encapsulation but modify fare calculation and add a Pass class; replace switch with indexed std::array to reduce repeated branches and make adding a zone a table entry plus enum value. Policy chosen: weekend discount takes precedence and does not combine with peak surcharge. Worked examples: Airport weekday off-peak Rs 60; weekday peak Rs 72; weekend even during peak hours Rs 54. A two-zone pass for Inner and Airport covers those zones but not Middle. Tests show table-driven lookup is O(1), uses O(z) fare storage, and the class protects balance invariants. For production, validate enum indices, handle pass expiry/renewal, and define whether a pass overrides stored-value deductions.
+
+## Complexity
+Fare lookup, peak check, and card eligibility: O(1) time. Per-card state: O(1) space. Batch of n journeys: O(n) time.

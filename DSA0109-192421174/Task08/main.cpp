@@ -1,0 +1,4 @@
+#include <iomanip>
+#include <iostream>
+#include <limits>
+int main(){int hour; std::cout<<"Enter hour (0-23): ";while(!(std::cin>>hour)||hour<0||hour>23){if(std::cin.eof()){std::cerr<<"No valid input provided\n";return 1;}std::cin.clear();std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');std::cout<<"Invalid input. Enter an integer from 0 to 23: ";} long long farePaise=hour>=8&&hour<10||hour>=17&&hour<20?3600:3000;std::cout<<"Hour "<<hour<<", fare Rs "<<farePaise/100<<'.'<<std::setw(2)<<std::setfill('0')<<farePaise%100<<'\n';}

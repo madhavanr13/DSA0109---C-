@@ -1,0 +1,2 @@
+Journey fare (paise): 3600
+Accepted; balance (paise): 6400

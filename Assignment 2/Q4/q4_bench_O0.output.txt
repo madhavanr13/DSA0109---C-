@@ -1,0 +1,7 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q4_bench.cpp -o q4_bench_O0
+$ ./q4_bench_O0
+K=10	shift 4.32156 ms	circular 0.766675 ms	speed-up x5.63676	ns/add shift 21.6078 circ 3.83338	same statement: yes
+K=50	shift 14.7608 ms	circular 0.814731 ms	speed-up x18.1174	ns/add shift 73.8039 circ 4.07365	same statement: yes
+K=100	shift 28.8918 ms	circular 0.740989 ms	speed-up x38.9909	ns/add shift 144.459 circ 3.70494	same statement: yes
+K=1000	shift 278.752 ms	circular 0.77208 ms	speed-up x361.041	ns/add shift 1393.76 circ 3.8604	same statement: yes
+K=10000	shift 2761.01 ms	circular 0.844742 ms	speed-up x3268.47	ns/add shift 13805 circ 4.22371	same statement: yes

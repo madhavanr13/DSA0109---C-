@@ -1,0 +1,10 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q7_compare.cpp -o q7_compare_O0
+$ ./q7_compare_O0
+equivalence K=10:   PASS
+equivalence K=50:   PASS
+equivalence K=1000: PASS
+K=10	original 20.3716 ns/add	redesigned 3.86328 ns/add	speed-up x5.27313	memory both = 160 B + 16/16 B object
+K=50	original 75.7022 ns/add	redesigned 3.83231 ns/add	speed-up x19.7537	memory both = 800 B + 16/16 B object
+K=100	original 139.771 ns/add	redesigned 3.96224 ns/add	speed-up x35.2758	memory both = 1600 B + 16/16 B object
+K=1000	original 1467.97 ns/add	redesigned 3.6199 ns/add	speed-up x405.529	memory both = 16000 B + 16/16 B object
+K=10000	original 15220.6 ns/add	redesigned 4.09558 ns/add	speed-up x3716.34	memory both = 160000 B + 16/16 B object

@@ -1,0 +1,10 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q3_charge.cpp -o q3_charge
+$ ./q3_charge
+charge(2500)          = [grams]  125.00
+charge(2)             = [grams]  0.10
+charge(2.0f)          = [kg]     100.00
+charge(2.5)           = [kg]     125.00
+charge(2.5,true,true) = [kg]     175.00
+charge(parcel)        = [parcel] 90.00
+charge(2, true)       = [grams]  30.10
+charge(2L) would be ambiguous (long->int vs long->double): not used

@@ -1,0 +1,5 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q1_predict.cpp -o q1_predict
+$ ./q1_predict
+1 12 13
+1 100
+16 13 6 

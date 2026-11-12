@@ -1,0 +1,13 @@
+Q3 PREDICTION (redesigned overload set)
+ charge(int grams, bool=false, bool=false)
+ charge(double kg,  bool=false, bool=false)
+ charge(const Parcel&)
+1. charge(2500)          -> int exact match               -> grams version
+2. charge(2)             -> int exact match               -> grams version (2 grams!)
+3. charge(2.0f)          -> float->double PROMOTION beats float->int CONVERSION -> kg version
+4. charge(2.5)           -> double exact                  -> kg version
+5. charge(2.5,true,true) -> double exact                  -> kg version
+6. charge(parcel)        -> Parcel exact                  -> parcel version
+Original design: charge(2.5) ambiguous (1-arg and 3-arg-with-defaults both viable); charge(2.5,true) ambiguous (2-arg vs 3-arg).
+Prices (rate Rs0.05/g = Rs50/kg, express +30, insured +20):
+ 2500g=125.00 ; 2g=0.10 ; 2.0kg=100.00 ; 2.5kg=125.00 ; 2.5kg exp+ins=175.00 ; Parcel{1.2kg,express}=90.00

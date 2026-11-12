@@ -1,0 +1,5 @@
+Q5 PREDICTION (Token program)
+next starts at 100 (static, defined once). counter[0]=101, [1]=102, [2]=103, extra=104; issued()=104-100=4.
+Output: "101 103 104 4"   Constructor ran 4 times (3 for array + 1 for extra).
+BusTicket: Asha Seat 1, Bala Seat 2, Chitra Seat 3, Dev Waiting, Issued: 3
+Function called twice creating 4 tickets each: 2nd call all "Waiting" (static count persists after objects die) -> Issued stays 3.

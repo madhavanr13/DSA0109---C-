@@ -1,0 +1,21 @@
+$ g++ -std=c++17 -Wall -Wextra q3_ambiguous.cpp -o q3_ambiguous
+q3_ambiguous.cpp: In function 'int main()':
+q3_ambiguous.cpp:7:24: error: call of overloaded 'charge(double)' is ambiguous
+    7 |     std::cout << charge(2.5) << '\n';          // ambiguous: (double) vs (double,bool=,bool=)
+      |                  ~~~~~~^~~~~
+q3_ambiguous.cpp:3:8: note: candidate: 'double charge(double)'
+    3 | double charge(double weight)                                   { return weight * 50; }
+      |        ^~~~~~
+q3_ambiguous.cpp:5:8: note: candidate: 'double charge(double, bool, bool)'
+    5 | double charge(double weight, bool express = false, bool insured = false) { return weight * 50 + (express ? 30 : 0) + (insured ? 20 : 0); }
+      |        ^~~~~~
+q3_ambiguous.cpp:8:24: error: call of overloaded 'charge(double, bool)' is ambiguous
+    8 |     std::cout << charge(2.5, true) << '\n';    // ambiguous: (double,bool) vs (double,bool,bool=)
+      |                  ~~~~~~^~~~~~~~~~~
+q3_ambiguous.cpp:4:8: note: candidate: 'double charge(double, bool)'
+    4 | double charge(double weight, bool express)                     { return weight * 50 + (express ? 30 : 0); }
+      |        ^~~~~~
+q3_ambiguous.cpp:5:8: note: candidate: 'double charge(double, bool, bool)'
+    5 | double charge(double weight, bool express = false, bool insured = false) { return weight * 50 + (express ? 30 : 0) + (insured ? 20 : 0); }
+      |        ^~~~~~
+(exit status 1)

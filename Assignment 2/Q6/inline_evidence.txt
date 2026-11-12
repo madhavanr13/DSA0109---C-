@@ -1,0 +1,5 @@
+# Evidence that inline is only a request (q6_bench_arrays.cpp, g++ 13.3 -S):
+-O0: call sites of minutesInline   = 1  (still a real call)
+-O0: call sites of minutesNoInline = 1
+-O2: call sites of minutesInline   = 0  (body inlined)
+-O2: call sites of minutesNoInline = 1  (attribute noinline forces a call)

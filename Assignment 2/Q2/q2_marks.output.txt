@@ -1,0 +1,14 @@
+$ g++ -std=c++17 -Wall -Wextra -O2 q2_marks.cpp -o q2_marks
+$ ./q2_marks
+original          : 56 78 91 67 84
+after highest()+=2: 56 78 93 67 84
+after highest()=50: 56 78 50 67 84
+const ref = 93, copy changed to 95, array still has 93
+after ref/index/ptr : 56 78 93 67 84
+capacity before growth: 5, &v[2] = 0x5571a0ec32c8
+capacity after  growth: 160, &v[2] = 0x5571a0ec3578
+old pointer still equals current address? false  (false => dangling)
+index still valid: v[2] = 91
+n=100000  ref 0.060649 ms  index 0.03779 ms  ptr 0.060637 ms  (sink 252689)
+n=1000000  ref 0.674539 ms  index 0.360234 ms  ptr 0.650622 ms  (sink 252689)
+n=10000000  ref 13.8274 ms  index 6.14886 ms  ptr 12.0648 ms  (sink 252689)

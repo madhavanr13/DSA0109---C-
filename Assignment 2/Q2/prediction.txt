@@ -1,0 +1,5 @@
+Q2 PREDICTION
+marks = {56,78,91,67,84}; highest(marks)+=2 -> 91 becomes 93, others unchanged.
+Compiler: returning reference to local -> g++ -Wall warns "reference to local variable returned" (-Wreturn-local-addr).
+Vector: push_back past capacity reallocates -> old reference/pointer/iterator refer to freed storage (dangling).
+Index (size_t) survives reallocation; pointer and reference do not.

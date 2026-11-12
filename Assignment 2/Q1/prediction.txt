@@ -1,0 +1,12 @@
+Q1 PREDICTION (written before running)
+a=1,b=2,c=3.  change(a,b,&c): a is a copy -> local only; b is alias -> 12; *c -> 13.
+Line 1: "1 12 13"
+bigger(a,c): a=1, c=13 -> p>q false -> returns q (alias of c) -> c = 100.
+Line 2: "1 100"
+show(1)     -> 1+5+10 = 16   (y,z both defaulted)
+show(1,2)   -> 1+2+10 = 13   (z defaulted)
+show(1,2,3) -> 1+2+3  = 6    (no defaults)
+Line 3: "16 13 6 " (trailing space, then newline)
+
+three-ways (each fee starts at 45000, 10%): value -> 45000, reference -> 40500, pointer -> 40500
+chained 10%,15%,25% on 45000 (integer arithmetic, applied in sequence): 45000->40500->34425->25819

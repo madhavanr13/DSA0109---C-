@@ -1,0 +1,3 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q6_time.cpp -o q6_time
+$ ./q6_time
+205 false

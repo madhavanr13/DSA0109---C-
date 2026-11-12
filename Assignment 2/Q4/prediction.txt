@@ -1,0 +1,4 @@
+Q4 PREDICTION
+11 transactions into a 10-slot account: the 1st (oldest) is discarded; mini-statement shows transactions 2..11 oldest->newest.
+Shift design: O(k) per add (k=10 moves). Circular index: O(1) per add.
+For 50 slots: changing one constant is enough; shifting then costs 5x more per add.

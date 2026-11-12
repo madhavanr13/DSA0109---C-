@@ -1,0 +1,4 @@
+Q7 PREDICTION (selected program: Q4 mini-statement)
+Shifting cost per transaction is O(K): time/add grows ~linearly with K (K=10 -> 10000: ~1000x); circular stays flat (within ~2x).
+At K=10 both within noise (<2x). At K=10000 I expect >=100x speed-up for circular. Memory unchanged: K*sizeof(Txn)+O(1).
+Both versions must print identical statements (checksum equal).

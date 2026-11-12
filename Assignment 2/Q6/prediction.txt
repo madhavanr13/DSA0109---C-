@@ -1,0 +1,5 @@
+Q6 PREDICTION
+(9:45,13:10): 790-585 = 205 ; earlier(arrival,departure) false -> "205 false"
+(11:50,12:10) -> 20 ; same time twice -> 0 and earlier()=false ; (0:00,23:59)=1439
+Timing: at -O0 'inline' removes nothing -> inline ~ non-inline;
+at -O2 inline version several times faster than a noinline call (no call overhead + more optimisation).

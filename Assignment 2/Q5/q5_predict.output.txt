@@ -1,0 +1,3 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q5_predict.cpp -o q5_predict
+$ ./q5_predict
+101 103 104 4

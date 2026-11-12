@@ -1,0 +1,4 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q1_complete.cpp -o q1_complete
+$ ./q1_complete
+after call by value : 45000
+after call by reference: 40500

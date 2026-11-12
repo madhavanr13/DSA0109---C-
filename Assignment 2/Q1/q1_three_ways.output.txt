@@ -1,0 +1,12 @@
+$ g++ -std=c++17 -Wall -Wextra -O2 q1_three_ways.cpp -o q1_three_ways
+$ ./q1_three_ways
+  inside (value)    : 40500
+stored fee after value   : 45000
+stored fee after ref     : 40500
+stored fee after pointer : 40500
+merit+sports+single-parent (chained, returned) : 25819
+same chain, in place via reference              : 25819
+sizeof(long long) = 8, sizeof(Student) = 4136 bytes
+1000000 calls by value      : 34.749 ms
+1000000 calls by const ref  : 0.677864 ms
+(checksum 999999000000)

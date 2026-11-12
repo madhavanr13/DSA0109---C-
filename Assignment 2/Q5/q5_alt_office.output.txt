@@ -1,0 +1,7 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q5_alt_office.cpp -o q5_alt_office
+$ ./q5_alt_office
+Asha: Seat 1
+Bala: Seat 2
+Chitra: Waiting
+Dev: Seat 1
+bus1 issued 2, bus2 issued 1

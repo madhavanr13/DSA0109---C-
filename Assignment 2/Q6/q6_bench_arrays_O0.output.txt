@@ -1,0 +1,7 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q6_bench_arrays.cpp -o q6_bench_arrays_O0
+$ ./q6_bench_arrays_O0
+calls: 10000000  (pre-built arrays, best of 5 runs, ms)
+friend, inline       : 46.8386
+friend, noinline     : 63.3316
+member minutesTo     : 62.3409
+public getters       : 136.89

@@ -1,0 +1,12 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q6_tests.cpp -o q6_tests
+$ ./q6_tests
+PASS 9:45 -> 13:10 = 205
+PASS order does not matter (abs)
+PASS 11:50 -> 12:10 (across noon) = 20
+PASS same time twice = 0
+PASS same time: earlier() false both ways
+PASS 11:50 earlier than 12:10
+PASS 12:00 vs 0:00 = 720
+PASS 0:00 -> 23:59 = 1439
+PASS 0:00 earlier than 23:59
+ALL TESTS PASSED

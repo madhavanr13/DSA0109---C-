@@ -1,0 +1,16 @@
+--- vector use-after-free ---
+$ g++ -std=c++17 -Wall -Wextra -O0 -g -fsanitize=address q2_vector_uaf.cpp -o q2_vector_uaf ; ./q2_vector_uaf
+=================================================================
+==192==ERROR: AddressSanitizer: heap-use-after-free on address 0x502000000010 at pc 0x55f77b22d667 bp 0x7ffe56ef31c0 sp 0x7ffe56ef31b0
+READ of size 4 at 0x502000000010 thread T0
+    #0 0x55f77b22d666 in main /home/claude/DSA01-192421174-Assignment2/Q2/q2_vector_uaf.cpp:9
+    #1 0x7f23ff02a1c9  (/lib/x86_64-linux-gnu/libc.so.6+0x2a1c9) (BuildId: a4a7992a8e66555c8141ab2a08a8465ff6e0ea65)
+    #2 0x7f23ff02a28a in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2a28a) (BuildId: a4a7992a8e66555c8141ab2a08a8465ff6e0ea65)
+    #3 0x55f77b22d324 in _start (/tmp/q2u+0x2324) (BuildId: d24ee9defb701017db89372f19275f6ec7c1476a)
+
+0x502000000010 is located 0 bytes inside of 16-byte region [0x502000000010,0x502000000020)
+freed by thread T0 here:
+    #0 0x7f23ff8ff5e8 in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164
+    #1 0x55f77b22f3aa in std::__new_allocator<int>::deallocate(int*, unsigned long) /usr/include/c++/13/bits/new_allocator.h:172
+    #2 0x55f77b22e28f in std::allocator_traits<std::allocator<int> >::deallocate(std::allocator<int>&, int*, unsigned long) /usr/include/c++/13/bits/alloc_traits.h:517
+    #3 0x55f77b22e28f in std::_Vector_base<int, std::allocator<int> >::_M_deallocate(int*, unsigned long) /usr/include/c++/13/bits/stl_vector.h:390

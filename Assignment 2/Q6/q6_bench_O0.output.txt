@@ -1,0 +1,7 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q6_bench.cpp -o q6_bench_O0
+$ ./q6_bench_O0
+calls: 10000000  (best of 5 runs, ms)
+friend, inline       : 79.9682
+friend, noinline     : 81.4027
+member minutesTo     : 82.0528
+public getters       : 155.516

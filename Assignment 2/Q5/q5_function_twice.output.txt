@@ -1,0 +1,16 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q5_function_twice.cpp -o q5_function_twice
+$ ./q5_function_twice
+-- first call --
+P1: Seat 1
+P2: Seat 2
+P3: Seat 3
+P4: Waiting
+Issued so far: 3
+-- second call (bus already full) --
+P1: Waiting
+P2: Waiting
+P3: Waiting
+P4: Waiting
+Issued so far: 3
+Late: Waiting
+Issued at end: 3

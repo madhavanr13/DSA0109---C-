@@ -1,0 +1,38 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q4_account.cpp -o q4_account
+$ ./q4_account
+Account 1001  (last 10 transactions, oldest first)
+  Deposit        200
+  Deposit        300
+  Deposit        400
+  Deposit        500
+  Deposit        600
+  Deposit        700
+  Deposit        800
+  Deposit        900
+  Deposit       1000
+  Deposit       1100
+  Balance: 11600
+withdraw 99999 -> false (refused, balance unchanged)
+Account 1001  (last 10 transactions, oldest first)
+  Deposit        300
+  Deposit        400
+  Deposit        500
+  Deposit        600
+  Deposit        700
+  Deposit        800
+  Deposit        900
+  Deposit       1000
+  Deposit       1100
+  Withdrawal     250
+  Balance: 11350
+[shift] Account 1002
+  D     200
+  D     300
+  D     400
+  D     500
+  D     600
+  D     700
+  D     800
+  D     900
+  D    1000
+  D    1100

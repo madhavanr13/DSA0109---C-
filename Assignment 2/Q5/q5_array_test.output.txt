@@ -1,0 +1,10 @@
+$ g++ -std=c++17 -Wall -Wextra -O0 q5_array_test.cpp -o q5_array_test
+$ ./q5_array_test
+A: Seat 1
+B: Seat 2
+C: Seat 3
+D: Waiting
+E: Waiting
+F: Waiting
+G: Waiting
+Seats issued: 3, waiting list: 4

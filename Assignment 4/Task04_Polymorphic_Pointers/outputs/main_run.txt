@@ -1,0 +1,9 @@
+$ g++ -std=c++17 -Wall -Wextra -pedantic Task04_Polymorphic_Pointers/main.cpp -o Task04_Polymorphic_Pointers/main
+$ Task04_Polymorphic_Pointers/main
+3.5
+4
+Slicing demonstration: Account copy = SeniorAccount() copies only Account base state.
+Account destroyed
+SeniorAccount destroyed
+Account destroyed
+Exit code: 0

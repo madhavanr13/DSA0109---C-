@@ -1,0 +1,13 @@
+$ g++ -std=c++17 -Wall -Wextra -pedantic Task06_Vehicle_Rental/main.cpp -o Task06_Vehicle_Rental/main
+$ Task06_Vehicle_Rental/main
+Bicycle CYC-101 daily Rs.100
+Returned CYC-101 total Rs.350.00
+TwoWheeler TN-01-BB-2020 fuel 2.00 L
+Returned TN-01-BB-2020 total Rs.1435.00
+Car TN-09-CC-3030 seats 5
+Returned TN-09-CC-3030 total Rs.6825.00
+ElectricCar TN-10-EE-4040 seats 5 battery 20.00 kWh
+Returned TN-10-EE-4040 total Rs.7860.00
+ElectricBus TN-11-EB-5050 capacity 30
+Returned TN-11-EB-5050 total Rs.17980.00
+Exit code: 0

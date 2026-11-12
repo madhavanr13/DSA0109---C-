@@ -1,0 +1,10 @@
+Compilation verification (g++ 14.2.0, C++17, -Wall -Wextra -pedantic)
+Task01_Class_Design/main.cpp: PASS
+Task02_Inheritance_Diamond/main.cpp: PASS
+Task03_Constructors_Members/complete_code.cpp: PASS
+Task03_Constructors_Members/main.cpp: PASS
+Task04_Polymorphic_Pointers/predict_output.cpp: PASS
+Task04_Polymorphic_Pointers/main.cpp: PASS
+Task05_Cart_This_Pointer/complete_code.cpp: PASS
+Task05_Cart_This_Pointer/main.cpp: PASS
+Task06_Vehicle_Rental/main.cpp: PASS

@@ -1,0 +1,7 @@
+$ g++ -std=c++17 -Wall -Wextra -pedantic Task05_Cart_This_Pointer/main.cpp -o Task05_Cart_This_Pointer/main
+$ Task05_Cart_This_Pointer/main
+Direct/reference cart total: 81
+Dynamic cart total: 162
+Required chained total: 324.00
+Highest total in pointer array: 50.00
+Exit code: 0

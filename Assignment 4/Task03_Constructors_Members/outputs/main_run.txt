@@ -1,0 +1,32 @@
+$ g++ -std=c++17 -Wall -Wextra -pedantic Task03_Constructors_Members/main.cpp -o Task03_Constructors_Members/main
+$ Task03_Constructors_Members/main
+-- Student lifetime --
+Address constructed
+Person constructed
+Course constructed
+Student constructed
+Student destroyed
+Course destroyed
+Person destroyed
+Address destroyed
+-- Staff lifetime --
+Address constructed
+Person constructed
+Staff constructed
+Staff destroyed
+Person destroyed
+Address destroyed
+-- TeachingAssistant lifetime (virtual diamond) --
+Address constructed
+Person constructed
+Course constructed
+Student constructed
+Staff constructed
+TeachingAssistant constructed
+TeachingAssistant destroyed
+Staff destroyed
+Student destroyed
+Course destroyed
+Person destroyed
+Address destroyed
+Exit code: 0

@@ -1,0 +1,11 @@
+$ g++ -std=c++17 -Wall -Wextra -pedantic Task02_Inheritance_Diamond/main.cpp -o Task02_Inheritance_Diamond/main
+$ Task02_Inheritance_Diamond/main
+Person constructed
+Student constructed
+Staff constructed
+TeachingAssistant constructed
+Kavya | 192311001 | 9876543210 | B.Tech IT | CGPA 8.7 | IT | Rs.24000
+Person constructed
+Student constructed
+Arun | 192311002 | 9876500000 | M.Tech | fellowship Rs.18000
+Exit code: 0

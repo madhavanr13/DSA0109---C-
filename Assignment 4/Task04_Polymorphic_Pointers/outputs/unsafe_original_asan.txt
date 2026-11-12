@@ -1,0 +1,23 @@
+$ g++ -std=c++17 -Wall -Wextra -fsanitize=address -fno-omit-frame-pointer Task04_Polymorphic_Pointers/unsafe_original.cpp -o Task04_Polymorphic_Pointers/unsafe_original_asan
+$ ASAN_OPTIONS=detect_leaks=1 Task04_Polymorphic_Pointers/unsafe_original_asan
+=================================================================
+==2857==ERROR: AddressSanitizer: new-delete-type-mismatch on 0x502000000030 in thread T0:
+  object passed to delete has wrong type:
+  size of the allocated type:   8 bytes;
+  size of the deallocated type: 1 bytes.
+    #0 0x7f08fd71c678 in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164
+    #1 0x55b93edd94a4 in main (Task04_Polymorphic_Pointers/unsafe_original_asan+0x14a4) (BuildId: 03c90643698f4c0563ec64600d8c799b2aafa5fd)
+    #2 0x7f08fd0d6ca7  (/lib/x86_64-linux-gnu/libc.so.6+0x29ca7) (BuildId: c495b62edadd6c356265942ec1282d98058a7b41)
+    #3 0x7f08fd0d6d64 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29d64) (BuildId: c495b62edadd6c356265942ec1282d98058a7b41)
+    #4 0x55b93edd9160 in _start (Task04_Polymorphic_Pointers/unsafe_original_asan+0x1160) (BuildId: 03c90643698f4c0563ec64600d8c799b2aafa5fd)
+
+0x502000000030 is located 0 bytes inside of 8-byte region [0x502000000030,0x502000000038)
+allocated by thread T0 here:
+    #0 0x7f08fd71b778 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x55b93edd9306 in main (Task04_Polymorphic_Pointers/unsafe_original_asan+0x1306) (BuildId: 03c90643698f4c0563ec64600d8c799b2aafa5fd)
+    #2 0x7f08fd0d6ca7  (/lib/x86_64-linux-gnu/libc.so.6+0x29ca7) (BuildId: c495b62edadd6c356265942ec1282d98058a7b41)
+
+SUMMARY: AddressSanitizer: new-delete-type-mismatch ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164 in operator delete(void*, unsigned long)
+==2857==HINT: if you don't care about these errors you may set ASAN_OPTIONS=new_delete_type_mismatch=0
+==2857==ABORTING
+Exit code: 1

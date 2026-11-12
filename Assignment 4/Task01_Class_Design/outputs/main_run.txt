@@ -1,0 +1,8 @@
+$ g++ -std=c++17 -Wall -Wextra -pedantic Task01_Class_Design/main.cpp -o Task01_Class_Design/main
+$ Task01_Class_Design/main
+Professor | Anita | 101 | Rs.79000.00
+LabAssistant | Bala | 102 | Rs.42600.00
+GuestFaculty | Charan | 103 | Rs.18000.00
+ResearchFellow | Divya | 104 | Rs.25000.00
+Payroll total | Rs.164600.00
+Exit code: 0

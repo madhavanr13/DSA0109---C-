@@ -1,0 +1,1 @@
+Capture genuine terminal screenshots on your own computer after compiling and running the task. The `outputs/` folder contains text transcripts from the preparation environment; no synthetic images are presented as screenshots. Save your screenshots in this folder before submission.

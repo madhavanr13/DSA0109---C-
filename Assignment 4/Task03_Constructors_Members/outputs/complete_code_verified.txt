@@ -1,0 +1,5 @@
+$ g++ -std=c++17 -Wall -Wextra -pedantic complete_code.cpp -o complete_code.run
+Compilation: SUCCESS
+$ ./complete_code.run
+Exit code: 0
+192311001 Kavya (19) Salem-636001

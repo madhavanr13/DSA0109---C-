@@ -1,0 +1,10 @@
+$ g++ -std=c++17 -Wall -Wextra -pedantic Task04_Polymorphic_Pointers/unsafe_original.cpp -o Task04_Polymorphic_Pointers/unsafe_original
+$ Task04_Polymorphic_Pointers/unsafe_original
+3.5
+3.5
+Account destructor
+Account destructor
+SeniorAccount destructor
+Account destructor
+Account destructor
+Exit code: 0

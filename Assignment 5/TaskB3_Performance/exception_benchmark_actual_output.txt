@@ -1,0 +1,3 @@
+0% invalid: return-code=1556us exceptions=1575us
+1% invalid: return-code=2031us exceptions=9437us
+50% invalid: return-code=1180us exceptions=411681us

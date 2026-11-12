@@ -1,0 +1,3 @@
+1000 bills: switch=3us variant=42us virtual-dispatch-proxy=3us
+1000000 bills: switch=5105us variant=44476us virtual-dispatch-proxy=3105us
+10000000 bills: switch=57670us variant=417031us virtual-dispatch-proxy=32271us

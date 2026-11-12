@@ -1,0 +1,10 @@
+OP Ravi: 1700.00
+IP Meena: 47500.00
+DAYCARE Arun: 18000.00
+EMERGENCY Sara: 4250.00
+Grand total: 71450.00
+Insurance cover for OP: 1360.00
+Corporate cover for IP: 14250.00
+Self-pay cover: 0.00
+Claim rejected: exceeds cover
+Invalid bill: negative charge

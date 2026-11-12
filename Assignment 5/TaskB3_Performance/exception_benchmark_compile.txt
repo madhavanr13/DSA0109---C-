@@ -1,0 +1,1 @@
+g++ -std=c++17 -Wall -Wextra -pedantic /mnt/data/DSA01-192421174-Assignment5/TaskB3_Performance/exception_benchmark.cpp -o /mnt/data/DSA01-192421174-Assignment5/TaskB3_Performance/exception_benchmark

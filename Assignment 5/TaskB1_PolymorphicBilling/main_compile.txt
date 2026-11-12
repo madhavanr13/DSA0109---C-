@@ -1,0 +1,5 @@
+g++ -std=c++17 -Wall -Wextra -pedantic /mnt/data/DSA01-192421174-Assignment5/TaskB1_PolymorphicBilling/main.cpp -o /mnt/data/DSA01-192421174-Assignment5/TaskB1_PolymorphicBilling/main
+/mnt/data/DSA01-192421174-Assignment5/TaskB1_PolymorphicBilling/main.cpp: In member function ‘virtual double SelfPay::amountCovered(const Bill&) const’:
+/mnt/data/DSA01-192421174-Assignment5/TaskB1_PolymorphicBilling/main.cpp:56:77: warning: unused parameter ‘b’ [-Wunused-parameter]
+   56 | class SelfPay final:public Payer { public: double amountCovered(const Bill& b)const override{return 0.0;} std::string name()const override{return "SelfPay";} };
+      |                                                                 ~~~~~~~~~~~~^

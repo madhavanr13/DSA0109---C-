@@ -1,0 +1,5 @@
+Untitled | Unknown | copies=0
+The Alchemist | Unknown | copies=0
+Clean Code | Unknown | copies=4
+The C++ Programming Language | Bjarne Stroustrup | copies=3
+Rejected: copies cannot be negative

@@ -1,0 +1,5 @@
+10 sec 12 sec 12 sec
+rollover=3600 sec
+Track B
+Range error: playlist index
+Track C

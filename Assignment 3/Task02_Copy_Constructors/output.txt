@@ -1,0 +1,4 @@
+[deep copy] Ibuprofen ORS | Paracetamol Cetirizine | Paracetamol ORS
+[deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] 10 deep copies of 10 medicines: 2 us
+[deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] 10 deep copies of 1000 medicines: 103 us
+[deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] [deep copy] 10 deep copies of 100000 medicines: 11838 us

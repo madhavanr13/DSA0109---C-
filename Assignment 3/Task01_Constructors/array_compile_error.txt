@@ -1,0 +1,14 @@
+array_without_default.cpp: In function 'int main()':
+array_without_default.cpp:3:25: error: no matching function for call to 'Book::Book()'
+    3 | int main(){ Book shelf[2]; } // Intentionally fails: no default constructor.
+      |                         ^
+array_without_default.cpp:2:24: note: candidate: 'Book::Book(const std::string&)'
+    2 | struct Book { explicit Book(const std::string& title) : title(title) {} std::string title; };
+      |                        ^~~~
+array_without_default.cpp:2:24: note:   candidate expects 1 argument, 0 provided
+array_without_default.cpp:2:8: note: candidate: 'Book::Book(const Book&)'
+    2 | struct Book { explicit Book(const std::string& title) : title(title) {} std::string title; };
+      |        ^~~~
+array_without_default.cpp:2:8: note:   candidate expects 1 argument, 0 provided
+array_without_default.cpp:2:8: note: candidate: 'Book::Book(Book&&)'
+array_without_default.cpp:2:8: note:   candidate expects 1 argument, 0 provided

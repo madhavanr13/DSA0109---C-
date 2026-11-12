@@ -1,0 +1,2 @@
+integer paise total=75000000 time_us=1088
+double total=750000 time_us=1438

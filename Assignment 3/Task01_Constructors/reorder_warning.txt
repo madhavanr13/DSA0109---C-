@@ -1,0 +1,17 @@
+reorder_demo.cpp: In constructor 'OrderDemo::OrderDemo()':
+reorder_demo.cpp:4:9: warning: 'OrderDemo::second' will be initialized after [-Wreorder]
+    4 |     int second;
+      |         ^~~~~~
+reorder_demo.cpp:3:9: warning:   'int OrderDemo::first' [-Wreorder]
+    3 |     int first;
+      |         ^~~~~
+reorder_demo.cpp:5:5: warning:   when initialized here [-Wreorder]
+    5 |     OrderDemo() : second(2), first(second + 1) { std::cout << first << ' ' << second << '\n'; }
+      |     ^~~~~~~~~
+reorder_demo.cpp:5:36: warning: member 'OrderDemo::second' is used uninitialized [-Wuninitialized]
+    5 |     OrderDemo() : second(2), first(second + 1) { std::cout << first << ' ' << second << '\n'; }
+      |                                    ^~~~~~
+reorder_demo.cpp: In constructor 'OrderDemo::OrderDemo()':
+reorder_demo.cpp:5:36: warning: '*this.OrderDemo::second' is used uninitialized [-Wuninitialized]
+    5 |     OrderDemo() : second(2), first(second + 1) { std::cout << first << ' ' << second << '\n'; }
+      |                                    ^~~~~~

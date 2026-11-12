@@ -1,0 +1,8 @@
+Construct event 2x3
+. . . 
+. . X 
+Destroy event; booked=1
+Construct event 1x2
+Destroy event; booked=1
+Construct event 0x5
+Destroy event; booked=0

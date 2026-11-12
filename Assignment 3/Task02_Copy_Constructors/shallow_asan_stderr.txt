@@ -1,0 +1,24 @@
+=================================================================
+==615==ERROR: AddressSanitizer: attempting double-free on 0x502000000010 in thread T0:
+    #0 0x7fe7b62cc678 in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164
+    #1 0x55c7d64504ff in BadPrescription::~BadPrescription() (/mnt/data/DSA01-Assignment3/Task02_Copy_Constructors/shallow_asan+0x14ff) (BuildId: 43a792c8a9d3709649724fb56c3574c538e2f5a4)
+    #2 0x55c7d6450342 in main (/mnt/data/DSA01-Assignment3/Task02_Copy_Constructors/shallow_asan+0x1342) (BuildId: 43a792c8a9d3709649724fb56c3574c538e2f5a4)
+    #3 0x7fe7b5c86ca7  (/lib/x86_64-linux-gnu/libc.so.6+0x29ca7) (BuildId: c495b62edadd6c356265942ec1282d98058a7b41)
+    #4 0x7fe7b5c86d64 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x29d64) (BuildId: c495b62edadd6c356265942ec1282d98058a7b41)
+    #5 0x55c7d6450150 in _start (/mnt/data/DSA01-Assignment3/Task02_Copy_Constructors/shallow_asan+0x1150) (BuildId: 43a792c8a9d3709649724fb56c3574c538e2f5a4)
+
+0x502000000010 is located 0 bytes inside of 4-byte region [0x502000000010,0x502000000014)
+freed by thread T0 here:
+    #0 0x7fe7b62cc678 in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164
+    #1 0x55c7d64504ff in BadPrescription::~BadPrescription() (/mnt/data/DSA01-Assignment3/Task02_Copy_Constructors/shallow_asan+0x14ff) (BuildId: 43a792c8a9d3709649724fb56c3574c538e2f5a4)
+    #2 0x55c7d6450325 in main (/mnt/data/DSA01-Assignment3/Task02_Copy_Constructors/shallow_asan+0x1325) (BuildId: 43a792c8a9d3709649724fb56c3574c538e2f5a4)
+    #3 0x7fe7b5c86ca7  (/lib/x86_64-linux-gnu/libc.so.6+0x29ca7) (BuildId: c495b62edadd6c356265942ec1282d98058a7b41)
+
+previously allocated by thread T0 here:
+    #0 0x7fe7b62cb778 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x55c7d6450439 in BadPrescription::BadPrescription() (/mnt/data/DSA01-Assignment3/Task02_Copy_Constructors/shallow_asan+0x1439) (BuildId: 43a792c8a9d3709649724fb56c3574c538e2f5a4)
+    #2 0x55c7d64502a5 in main (/mnt/data/DSA01-Assignment3/Task02_Copy_Constructors/shallow_asan+0x12a5) (BuildId: 43a792c8a9d3709649724fb56c3574c538e2f5a4)
+    #3 0x7fe7b5c86ca7  (/lib/x86_64-linux-gnu/libc.so.6+0x29ca7) (BuildId: c495b62edadd6c356265942ec1282d98058a7b41)
+
+SUMMARY: AddressSanitizer: double-free ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164 in operator delete(void*, unsigned long)
+==615==ABORTING

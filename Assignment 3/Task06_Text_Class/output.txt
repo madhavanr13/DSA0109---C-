@@ -1,0 +1,4 @@
+Hello Cloud Computing
+copies=2
+empty='' equal=true
+This is a longer SMS message used to test dynamic allocation safely.

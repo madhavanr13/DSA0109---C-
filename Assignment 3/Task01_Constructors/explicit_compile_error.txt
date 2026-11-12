@@ -1,0 +1,4 @@
+explicit_conversion.cpp: In function 'int main()':
+explicit_conversion.cpp:3:28: error: conversion from 'std::string' {aka 'std::__cxx11::basic_string<char>'} to non-scalar type 'Label' requested
+    3 | int main(){ Label x = std::string("copy-initialization rejected"); (void)x; }
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
